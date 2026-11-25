@@ -1,0 +1,1216 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>X-style event 2027.2.6 | unicycle free</title>
+  <meta name="description" content="国際大会の種目「X-style」に挑戦できる一輪車イベント。2027年2月6日（土）宮野木スポーツセンターで開催。審査員は参加選手のみなさんです。">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="X-style event 2027.2.6 | unicycle free">
+  <meta property="og:description" content="国際大会の種目「X-style」に挑戦できる一輪車イベント。2027年2月6日（土）宮野木スポーツセンターで開催。">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+/* ===== 色・基本設定 ===== */
+:root {
+  --navy: #0f1b2d;
+  --navy-2: #18283f;
+  --accent: #ff5a1f;
+  --accent-2: #ffb21f;
+  --text: #1c2430;
+  --muted: #5d6878;
+  --line: #e3e7ee;
+  --gray: #f4f6f9;
+  --white: #fff;
+  --radius: 14px;
+  --en: "Oswald", "Noto Sans JP", sans-serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: "Noto Sans JP", system-ui, sans-serif;
+  color: var(--text);
+  line-height: 1.8;
+  font-size: 16px;
+  background: var(--white);
+  -webkit-text-size-adjust: 100%;
+}
+img { max-width: 100%; }
+[hidden] { display: none !important; }
+
+.container { width: min(100% - 40px, 880px); margin-inline: auto; }
+.section { padding: 72px 0; }
+.section--tight { padding: 48px 0; }
+.section--gray { background: var(--gray); }
+.section--dark { background: var(--navy); color: #dfe6f0; }
+.section--accent { background: linear-gradient(135deg, var(--accent), #e8381a); color: var(--white); }
+
+/* ===== 見出し ===== */
+.heading {
+  margin: 0 0 32px;
+  font-size: 1.5rem;
+  font-weight: 900;
+  line-height: 1.4;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 12px;
+}
+.heading__en {
+  width: 100%;
+  font-family: var(--en);
+  font-size: .85rem;
+  letter-spacing: .2em;
+  color: var(--accent);
+}
+.heading--light { color: var(--white); }
+.heading--light .heading__en { color: var(--accent-2); }
+.subheading { font-size: 1.1rem; margin: 40px 0 8px; }
+
+.tag {
+  font-size: .75rem;
+  font-weight: 700;
+  padding: 2px 10px;
+  border-radius: 999px;
+  background: var(--accent-2);
+  color: var(--navy);
+}
+
+/* ===== ボタン ===== */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 56px;
+  padding: 0 36px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 1.05rem;
+  text-decoration: none;
+  transition: transform .15s, box-shadow .15s;
+}
+.btn:hover { transform: translateY(-2px); }
+.btn--primary { background: var(--accent); color: var(--white); box-shadow: 0 8px 24px rgba(255, 90, 31, .4); }
+.btn--white { background: var(--white); color: var(--accent); box-shadow: 0 8px 24px rgba(0, 0, 0, .15); width: 100%; max-width: 420px; }
+.btn--outline { border: 2px solid var(--navy); color: var(--navy); }
+.btn--outline:hover { background: var(--navy); color: var(--white); }
+.link { color: var(--accent); font-weight: 700; text-decoration: none; }
+.link:hover { text-decoration: underline; }
+
+/* ===== HERO ===== */
+.hero {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 85% 15%, rgba(255, 90, 31, .35), transparent 45%),
+    radial-gradient(circle at 10% 90%, rgba(255, 178, 31, .18), transparent 40%),
+    var(--navy);
+  color: var(--white);
+  padding: 72px 0 80px;
+}
+.hero__wheel {
+  position: absolute;
+  right: -120px;
+  top: 50%;
+  width: 420px;
+  height: 420px;
+  margin-top: -210px;
+  border-radius: 50%;
+  border: 14px solid rgba(255, 255, 255, .06);
+  background:
+    repeating-conic-gradient(rgba(255, 255, 255, .06) 0 2deg, transparent 2deg 22.5deg);
+  animation: spin 30s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+@media (prefers-reduced-motion: reduce) { .hero__wheel { animation: none; } }
+
+.hero__inner { position: relative; width: min(100% - 40px, 880px); margin-inline: auto; }
+.hero__brand {
+  margin: 0 0 12px;
+  font-family: var(--en);
+  letter-spacing: .2em;
+  font-size: .85rem;
+  color: var(--accent-2);
+  text-transform: uppercase;
+}
+.hero__title {
+  margin: 0;
+  font-family: var(--en);
+  font-size: clamp(3.4rem, 16vw, 6.5rem);
+  line-height: .95;
+  letter-spacing: .02em;
+}
+.hero__title span { color: var(--accent); }
+.hero__lead { margin: 24px 0; font-size: 1.05rem; font-weight: 500; }
+
+.hero__info { display: flex; flex-wrap: wrap; gap: 12px 32px; margin: 0 0 24px; }
+.hero__info dt { font-family: var(--en); font-size: .75rem; letter-spacing: .2em; color: var(--accent-2); }
+.hero__info dd { margin: 0; font-size: 1.15rem; font-weight: 700; }
+
+.hero__status { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; margin-bottom: 28px; }
+.hero__countdown { font-weight: 700; font-size: .95rem; }
+
+.badge {
+  display: inline-block;
+  padding: 4px 14px;
+  border-radius: 999px;
+  font-size: .85rem;
+  font-weight: 700;
+}
+.badge--open { background: var(--accent-2); color: var(--navy); }
+.badge--soon { background: rgba(255, 255, 255, .15); color: var(--white); }
+.badge--closed { background: #8a94a3; color: var(--white); }
+
+/* ===== お知らせ ===== */
+.news { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
+.news__item, .news__empty {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px 20px;
+  padding: 16px 4px;
+  border-bottom: 1px solid var(--line);
+}
+.news__date { font-family: var(--en); color: var(--accent); min-width: 6em; }
+.news__empty { color: var(--muted); }
+
+/* ===== ABOUT ===== */
+.about__text { font-size: 1.05rem; margin: 0 0 32px; }
+.about__text strong { color: var(--white); }
+.cards { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); }
+.card {
+  background: var(--navy-2);
+  border: 1px solid rgba(255, 255, 255, .08);
+  border-radius: var(--radius);
+  padding: 24px;
+}
+.card p { margin: 0; font-size: .95rem; }
+.card__num { font-family: var(--en); color: var(--accent); font-size: 1.6rem !important; line-height: 1; }
+.card__title { color: var(--white); margin: 10px 0 6px; font-size: 1.1rem; }
+
+/* ===== 開催概要 ===== */
+.table { width: 100%; border-collapse: collapse; }
+.table th, .table td { padding: 16px 8px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
+.table th { width: 9em; color: var(--muted); font-weight: 700; font-size: .9rem; white-space: nowrap; }
+@media (max-width: 520px) {
+  .table, .table tbody, .table tr, .table th, .table td { display: block; width: auto; }
+  .table th { border-bottom: none; padding-bottom: 0; }
+}
+
+/* ===== タイムテーブル ===== */
+.timeline { list-style: none; margin: 0; padding: 0; position: relative; }
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 4.95em;
+  top: 10px;
+  bottom: 10px;
+  width: 2px;
+  background: var(--line);
+}
+.timeline__item { position: relative; display: flex; gap: 28px; padding: 10px 0; }
+.timeline__item::before {
+  content: "";
+  position: absolute;
+  left: calc(4.95em - 5px);
+  top: 19px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 0 4px var(--gray);
+}
+.timeline__time { width: 3.8em; flex-shrink: 0; font-family: var(--en); font-size: 1.1rem; text-align: right; color: var(--navy); }
+.timeline__body { display: flex; flex-direction: column; }
+.timeline__title { font-weight: 700; }
+.timeline__note { font-size: .85rem; color: var(--muted); }
+.note { color: var(--muted); font-size: .9rem; margin: 20px 0 0; }
+
+/* ===== カテゴリー ===== */
+.placeholder {
+  text-align: center;
+  border: 2px dashed var(--line);
+  border-radius: var(--radius);
+  padding: 36px 20px;
+  color: var(--muted);
+}
+.placeholder p { margin: 0; }
+.placeholder__icon { font-size: 2rem; }
+.cat-grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+.cat { border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
+.cat__head { display: flex; justify-content: space-between; align-items: center; background: var(--navy); color: var(--white); padding: 12px 18px; }
+.cat__name { margin: 0; font-size: 1rem; }
+.cat__time { font-family: var(--en); color: var(--accent-2); }
+.cat__list { list-style: none; margin: 0; padding: 8px 18px 14px; }
+.cat__list li { padding: 6px 0; border-bottom: 1px dashed var(--line); }
+.cat__list li:last-child { border-bottom: none; }
+
+/* ===== 申し込み ===== */
+.entry { text-align: center; }
+.entry__lead { font-size: 1.15rem; margin: 0 0 20px; }
+.entry__rules {
+  text-align: left;
+  background: rgba(255, 255, 255, .12);
+  border-radius: var(--radius);
+  padding: 20px 20px 20px 40px;
+  margin: 0 auto 28px;
+  max-width: 640px;
+}
+.entry__rules li + li { margin-top: 8px; }
+.entry__closed {
+  display: inline-block;
+  background: rgba(0, 0, 0, .18);
+  border-radius: 999px;
+  padding: 14px 28px;
+  font-weight: 700;
+  margin: 0;
+}
+.form-embed { background: var(--white); border-radius: var(--radius); overflow: hidden; margin: 0 auto 24px; max-width: 720px; }
+.form-embed iframe { display: block; width: 100%; height: 1400px; border: 0; }
+
+/* ===== 持ち物 ===== */
+.items { list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+.items li { display: flex; gap: 14px; padding: 20px; border: 1px solid var(--line); border-radius: var(--radius); }
+.items__icon { font-size: 1.8rem; line-height: 1; }
+.items p { margin: 4px 0 0; font-size: .9rem; color: var(--muted); }
+.items b { color: var(--accent); }
+
+/* ===== 注意事項 ===== */
+.list { margin: 0; padding-left: 1.3em; }
+.list li + li { margin-top: 6px; }
+.note-lead { margin: 0 0 12px; }
+
+/* ===== お問い合わせ ===== */
+.contact { text-align: center; }
+.contact .heading { justify-content: center; }
+.contact .heading__en { text-align: center; }
+
+/* ===== フッター ===== */
+.footer { background: var(--navy); color: var(--white); text-align: center; padding: 40px 20px 110px; }
+.footer p { margin: 0; }
+.footer__brand { font-family: var(--en); letter-spacing: .2em; text-transform: uppercase; }
+.footer__tagline { color: var(--accent-2); font-size: .85rem; margin-top: 4px !important; }
+
+/* ===== スマホ固定ボタン ===== */
+.fixed-cta {
+  position: fixed;
+  left: 50%;
+  bottom: 16px;
+  transform: translateX(-50%);
+  width: min(100% - 32px, 420px);
+  min-height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  background: var(--accent);
+  color: var(--white);
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, .25);
+  transition: opacity .25s, transform .25s;
+  z-index: 10;
+}
+.fixed-cta.is-hidden { opacity: 0; pointer-events: none; transform: translate(-50%, 20px); }
+@media (min-width: 900px) {
+  .fixed-cta { display: none; }
+  .footer { padding-bottom: 40px; }
+}
+
+/* ===== 参考動画 ===== */
+.movie__lead { margin: 0 0 24px; }
+.movies { display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); }
+.movie { margin: 0; }
+.movie__frame {
+  background: var(--navy);
+  border-radius: var(--radius);
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.movie__frame video { display: block; width: 100%; height: 100%; object-fit: contain; background: #000; }
+.movie__missing { margin: 0; color: rgba(255, 255, 255, .7); font-weight: 700; }
+.movie__caption { margin-top: 8px; font-size: .9rem; color: var(--muted); }
+
+/* ===== 申込フォーム ===== */
+.fcard {
+  background: var(--white);
+  color: var(--text);
+  border-radius: var(--radius);
+  padding: 28px 20px;
+  margin: 32px auto 0;
+  max-width: 640px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, .18);
+  text-align: left;
+}
+@media (min-width: 600px) { .fcard { padding: 36px 40px; } }
+.fnotice { background: var(--gray); border-radius: 10px; padding: 12px 16px; margin: 0 0 20px; font-weight: 700; color: var(--muted); text-align: center; }
+
+.fgroup { border: 0; margin: 0 0 28px; padding: 0 0 24px; border-bottom: 1px solid var(--line); min-width: 0; }
+.fgroup:last-of-type { border-bottom: 0; }
+.fgroup__title { font-weight: 900; font-size: 1.1rem; margin-bottom: 12px; padding: 0; color: var(--navy); }
+.fgroup__title em, .field__label em {
+  font-style: normal; font-size: .7rem; font-weight: 700;
+  background: var(--accent); color: var(--white);
+  padding: 1px 8px; border-radius: 4px; margin-left: 8px; vertical-align: 2px;
+}
+.optional { font-size: .7rem; font-weight: 700; background: var(--line); color: var(--muted); padding: 1px 8px; border-radius: 4px; margin-left: 8px; vertical-align: 2px; }
+
+.field { display: block; margin-bottom: 16px; }
+.field__label { display: block; font-weight: 700; font-size: .9rem; margin-bottom: 6px; }
+.field__help { display: block; font-size: .82rem; color: var(--muted); margin: 6px 0 0; }
+.fgroup > .field__help { margin: 0 0 12px; }
+
+.fcard input[type="text"], .fcard select, .fcard textarea {
+  width: 100%;
+  font: inherit;
+  font-size: 16px;
+  color: var(--text);
+  background: var(--white);
+  border: 1.5px solid #cfd6e0;
+  border-radius: 10px;
+  padding: 11px 12px;
+  min-height: 48px;
+}
+.fcard textarea { resize: vertical; }
+.fcard input:focus, .fcard select:focus, .fcard textarea:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px rgba(255, 90, 31, .18); }
+.fcard .is-invalid, .fcard input.is-invalid, .fcard select.is-invalid { border-color: #d92d20 !important; background: #fff5f4; }
+
+.field__prefix { display: flex; align-items: stretch; }
+.field__prefix > span { display: flex; align-items: center; padding: 0 12px; background: var(--gray); border: 1.5px solid #cfd6e0; border-right: 0; border-radius: 10px 0 0 10px; font-weight: 700; color: var(--muted); }
+.field__prefix input { border-radius: 0 10px 10px 0 !important; }
+
+/* 選手 */
+.players { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+.player { background: var(--gray); border-radius: 12px; padding: 14px 14px 2px; }
+.player__head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+.player__num { font-family: var(--en); color: var(--accent); font-weight: 700; letter-spacing: .05em; }
+.player__del { background: none; border: 0; color: var(--muted); font: inherit; font-size: .85rem; text-decoration: underline; cursor: pointer; min-height: 36px; padding: 0 4px; }
+.player__grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 0 10px; }
+.player__grid .field { margin-bottom: 12px; }
+.player__grid .field__label { font-size: .8rem; }
+.player__grid .field:last-child { grid-column: 1 / 2; }
+@media (min-width: 600px) {
+  .player__grid { grid-template-columns: minmax(0, 1.2fr) minmax(0, 1.4fr) minmax(0, .8fr); }
+  .player__grid .field:last-child { grid-column: auto; }
+}
+.btn-add {
+  width: 100%; min-height: 50px; margin-top: 12px;
+  border: 2px dashed var(--accent); background: none; color: var(--accent);
+  border-radius: 12px; font: inherit; font-weight: 700; cursor: pointer;
+}
+.btn-add:hover { background: rgba(255, 90, 31, .06); }
+.players__count { margin: 12px 0 0; text-align: right; }
+.players__count strong { font-size: 1.3rem; color: var(--accent); }
+
+/* ラジオ・チェック */
+.choices { display: flex; gap: 10px; border-radius: 12px; }
+.choice { flex: 1; }
+.choice input { position: absolute; opacity: 0; }
+.choice span {
+  display: flex; align-items: center; justify-content: center; min-height: 50px;
+  border: 1.5px solid #cfd6e0; border-radius: 10px; font-weight: 700; cursor: pointer;
+}
+.choice input:checked + span { border-color: var(--accent); background: rgba(255, 90, 31, .08); color: var(--accent); }
+.choice input:focus-visible + span { box-shadow: 0 0 0 3px rgba(255, 90, 31, .25); }
+.choices.is-invalid .choice span { border-color: #d92d20; }
+
+.check { display: flex; align-items: center; gap: 12px; padding: 12px 14px; border: 1.5px solid var(--line); border-radius: 10px; margin-bottom: 8px; cursor: pointer; }
+.check input { width: 22px; height: 22px; accent-color: var(--accent); flex-shrink: 0; }
+.check.is-invalid { border-color: #d92d20; background: #fff5f4; }
+
+.hp { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }
+
+.ferror { background: #fff5f4; border: 1.5px solid #d92d20; color: #b42318; border-radius: 10px; padding: 12px 16px; margin: 0 0 16px; font-size: .9rem; font-weight: 700; }
+.ferror span { display: block; }
+.btn--submit { width: 100%; border: 0; cursor: pointer; font-family: inherit; }
+.btn--submit:disabled { background: #b6bec9; box-shadow: none; cursor: not-allowed; transform: none; }
+
+/* 完了 */
+.fdone { text-align: center; }
+.fdone__icon { font-size: 2.6rem; margin: 0; }
+.fdone__title { font-size: 1.3rem; margin: 4px 0 12px; color: var(--navy); }
+.fdone__note { font-size: .9rem; color: var(--muted); }
+.fdone__summary { text-align: left; background: var(--gray); border-radius: 12px; padding: 16px 18px; margin: 20px 0 0; display: grid; grid-template-columns: 7em minmax(0, 1fr); gap: 8px 12px; }
+.fdone__summary dt { font-weight: 700; color: var(--muted); font-size: .85rem; }
+.fdone__summary dd { margin: 0; white-space: pre-line; overflow-wrap: anywhere; }
+
+/* ===== 仮のタイムテーブル ===== */
+.tag--big { font-size: .95rem; padding: 4px 14px; }
+.draft-box {
+  background: #fff7e0;
+  border: 2px solid var(--accent-2);
+  border-radius: var(--radius);
+  padding: 16px 20px;
+  margin: 0 0 28px;
+}
+.draft-box p { margin: 0; }
+.draft-box__title { font-weight: 900; font-size: 1.1rem; color: var(--navy); }
+.draft-box__title strong { color: var(--accent); font-size: 1.3rem; }
+.draft-box__text { margin-top: 6px !important; font-size: .95rem; }
+.timeline--draft { opacity: .75; }
+.timeline--draft .timeline__time { color: var(--muted); }
+
+</style>
+</head>
+<body>
+
+  <!-- ===== HERO ===== -->
+  <header class="hero">
+    <div class="hero__wheel" aria-hidden="true"></div>
+    <div class="hero__inner">
+      <p class="hero__brand"><span data-bind="brand"></span> presents</p>
+      <h1 class="hero__title">X-style<br><span>event</span></h1>
+      <p class="hero__lead">国際大会の種目「X-style」に挑戦しよう！<br>審査員は、参加するみんな！</p>
+
+      <dl class="hero__info">
+        <div><dt>DATE</dt><dd data-bind="dateLabel"></dd></div>
+        <div><dt>PLACE</dt><dd data-bind="venue"></dd></div>
+      </dl>
+
+      <div class="hero__status" id="status-box">
+        <span class="badge" id="status-badge"></span>
+        <span class="hero__countdown" id="countdown"></span>
+      </div>
+
+      <a href="#entry" class="btn btn--primary">参加を申し込む</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== お知らせ ===== -->
+    <section class="section section--tight" id="news">
+      <div class="container">
+        <h2 class="heading"><span class="heading__en">NEWS</span>お知らせ</h2>
+        <ul class="news" id="news-list"></ul>
+      </div>
+    </section>
+
+    <!-- ===== X-styleとは ===== -->
+    <section class="section section--dark" id="about">
+      <div class="container">
+        <h2 class="heading heading--light"><span class="heading__en">ABOUT</span>X-styleとは？</h2>
+        <p class="about__text">
+          国際大会で行われている、<strong>技の「難易度」</strong>を競う種目です。<br>
+          1人1分の演技で、自分の持っている技を出し切ります。
+        </p>
+        <div class="cards">
+          <div class="card">
+            <p class="card__num">01</p>
+            <h3 class="card__title">技術力アップ</h3>
+            <p>難しい技・いろいろな技に挑戦することで、一輪車の技術がぐんと伸びます。</p>
+          </div>
+          <div class="card">
+            <p class="card__num">02</p>
+            <h3 class="card__title">審査員は選手</h3>
+            <p>ほかの選手の演技を見て評価するのは、参加選手のみなさんです。</p>
+          </div>
+          <div class="card">
+            <p class="card__num">03</p>
+            <h3 class="card__title">考える力を育む</h3>
+            <p>「どこがすごいのか」を見て考える時間が、自分の演技にもつながります。</p>
+          </div>
+          <div class="card">
+            <p class="card__num">04</p>
+            <h3 class="card__title">考えて、実践する</h3>
+            <p>持ち時間内で何をするかを考え、実践します。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 参考動画 ===== -->
+    <section class="section section--gray" id="movie">
+      <div class="container">
+        <h2 class="heading"><span class="heading__en">MOVIE</span>参考動画</h2>
+        <p class="movie__lead" id="movie-lead"></p>
+        <div class="movies" id="movie-list"></div>
+      </div>
+    </section>
+
+    <!-- ===== 開催概要 ===== -->
+    <section class="section" id="outline">
+      <div class="container">
+        <h2 class="heading"><span class="heading__en">OUTLINE</span>開催概要</h2>
+        <table class="table">
+          <tr><th>イベント名</th><td>X-style event</td></tr>
+          <tr><th>開催日</th><td data-bind="dateLabel"></td></tr>
+          <tr><th>会場</th><td><span data-bind="venue"></span><br><a id="map-link" class="link" target="_blank" rel="noopener">地図を見る →</a></td></tr>
+          <tr><th>対象</th><td data-bind="target"></td></tr>
+          <tr><th>定員</th><td data-bind="capacity"></td></tr>
+          <tr><th>参加費</th><td data-bind="fee"></td></tr>
+          <tr><th>申込締切</th><td data-bind="deadlineLabel"></td></tr>
+          <tr><th>カテゴリー</th><td>学年ではなく<strong>年齢ごと</strong>に分けます。<br>低い年齢のカテゴリーから演技します。</td></tr>
+          <tr><th>エキシビション</th><td>大人の選手による演技があります（審査なし）</td></tr>
+        </table>
+      </div>
+    </section>
+
+    <!-- ===== タイムテーブル ===== -->
+    <section class="section section--gray" id="schedule">
+      <div class="container">
+        <h2 class="heading"><span class="heading__en">SCHEDULE</span>タイムテーブル <span class="tag tag--big" id="tt-draft">仮</span></h2>
+        <div class="draft-box" id="tt-draftbox">
+          <p class="draft-box__title">⚠ このタイムテーブルは<strong>仮</strong>です</p>
+          <p class="draft-box__text" id="tt-draftnote"></p>
+        </div>
+        <ol class="timeline" id="timeline"></ol>
+        <p class="note" id="tt-note"></p>
+      </div>
+    </section>
+
+    <!-- ===== カテゴリー・出走順 ===== -->
+    <section class="section" id="categories">
+      <div class="container">
+        <h2 class="heading"><span class="heading__en">ORDER</span>カテゴリー・出走順</h2>
+        <div id="category-area"></div>
+      </div>
+    </section>
+
+    <!-- ===== お申し込み ===== -->
+    <section class="section section--accent" id="entry">
+      <div class="container">
+        <h2 class="heading heading--light"><span class="heading__en">ENTRY</span>お申し込み</h2>
+        <div class="entry">
+          <p class="entry__lead">下のフォームから<strong>チームごと</strong>にお申し込みください。</p>
+          <ul class="entry__rules">
+            <li>必ず<strong>所属チームの許可</strong>をとってからお申し込みください。</li>
+            <li>駐車場の台数に限りがあります。<strong>駐車場を使うかどうか・台数</strong>をお間違えのないようご記入ください。</li>
+            <li>申込締切：<strong data-bind="deadlineLabel"></strong></li>
+          </ul>
+          <p class="entry__closed" id="entry-closed" hidden></p>
+        </div>
+
+        <!-- 申込フォーム -->
+        <div class="fcard" id="entry-form-wrap">
+          <p class="fnotice" id="form-notice" hidden>受付開始前のため、まだ送信できません。</p>
+
+          <form id="entry-form" novalidate>
+            <fieldset class="fgroup">
+              <legend class="fgroup__title">チーム情報</legend>
+              <label class="field">
+                <span class="field__label">チーム名<em>必須</em></span>
+                <input type="text" name="teamName" maxlength="50" required autocomplete="organization">
+              </label>
+              <label class="field">
+                <span class="field__label">InstagramのアカウントID<em>必須</em></span>
+                <span class="field__prefix"><span>@</span><input type="text" name="instagram" maxlength="31" required autocapitalize="off" autocorrect="off" spellcheck="false" inputmode="email" placeholder="unicycle_events"></span>
+                <span class="field__help">出走順のお知らせや、中止などの連絡をDMでお送りします。</span>
+              </label>
+            </fieldset>
+
+            <fieldset class="fgroup">
+              <legend class="fgroup__title">参加選手</legend>
+              <p class="field__help">名前・ふりがな・開催日（2/6）時点の年齢を、1人ずつ入力してください。</p>
+              <ol class="players" id="players"></ol>
+              <button type="button" class="btn-add" id="add-player">＋ 選手を追加する</button>
+              <p class="players__count">参加人数：<strong id="player-count">0</strong>名</p>
+            </fieldset>
+
+            <fieldset class="fgroup">
+              <legend class="fgroup__title">駐車場</legend>
+              <div class="field">
+                <span class="field__label">駐車場を使いますか<em>必須</em></span>
+                <div class="choices">
+                  <label class="choice"><input type="radio" name="parking" value="使う" required><span>使う</span></label>
+                  <label class="choice"><input type="radio" name="parking" value="使わない"><span>使わない</span></label>
+                </div>
+              </div>
+              <label class="field" id="cars-field" hidden>
+                <span class="field__label">使う台数<em>必須</em></span>
+                <select name="cars">
+                  <option value="">選んでください</option>
+                  <option value="1">1台</option><option value="2">2台</option><option value="3">3台</option><option value="4">4台</option><option value="5">5台</option>
+                </select>
+              </label>
+            </fieldset>
+
+            <fieldset class="fgroup">
+              <legend class="fgroup__title">確認事項<em>すべて必須</em></legend>
+              <label class="check"><input type="checkbox" name="agree" value="所属チームの許可" required><span>所属チームの許可をとりました</span></label>
+              <label class="check"><input type="checkbox" name="agree" value="室内用の一輪車" required><span>一輪車は室内用のものを使います</span></label>
+              <label class="check"><input type="checkbox" name="agree" value="保険は各自" required><span>保険は各自で加入します</span></label>
+              <label class="check"><input type="checkbox" name="agree" value="持ち物" required><span>雑巾・靴袋・昼食を持参します</span></label>
+            </fieldset>
+
+            <fieldset class="fgroup">
+              <legend class="fgroup__title">質問・連絡事項<span class="optional">任意</span></legend>
+              <textarea name="message" rows="4" maxlength="1000"></textarea>
+            </fieldset>
+
+            <!-- スパム対策（人には見えない欄） -->
+            <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+            <p class="ferror" id="form-error" role="alert" hidden></p>
+            <button type="submit" class="btn btn--primary btn--submit" id="submit-btn">この内容で申し込む</button>
+          </form>
+
+          <!-- 送信完了 -->
+          <div class="fdone" id="form-done" hidden>
+            <p class="fdone__icon">🎉</p>
+            <h3 class="fdone__title">お申し込みを受け付けました</h3>
+            <p>受付番号：<strong id="done-id"></strong></p>
+            <p class="fdone__note">この画面をスクリーンショットして、控えとして保存してください。</p>
+            <dl class="fdone__summary" id="done-summary"></dl>
+          </div>
+        </div>
+
+        <!-- 選手1人分のひな形 -->
+        <template id="player-tpl">
+          <li class="player">
+            <div class="player__head">
+              <span class="player__num"></span>
+              <button type="button" class="player__del">削除</button>
+            </div>
+            <div class="player__grid">
+              <label class="field"><span class="field__label">名前</span><input type="text" data-k="name" maxlength="30" required placeholder="山田 花子"></label>
+              <label class="field"><span class="field__label">ふりがな</span><input type="text" data-k="kana" maxlength="40" required placeholder="やまだ はなこ"></label>
+              <label class="field"><span class="field__label">年齢</span><select data-k="age" required></select></label>
+            </div>
+          </li>
+        </template>
+      </div>
+    </section>
+
+    <!-- ===== 持ち物 ===== -->
+    <section class="section" id="items">
+      <div class="container">
+        <h2 class="heading"><span class="heading__en">ITEMS</span>持ち物</h2>
+        <ul class="items">
+          <li><span class="items__icon">🛞</span><div><strong>一輪車・競技に必要なもの</strong><p>一輪車は必ず<b>室内用</b>のものをお願いします。万が一施設に傷をつけてしまった場合は、原状回復が必要です。</p></div></li>
+          <li><span class="items__icon">🧽</span><div><strong>雑巾</strong><p>最後にみんなで掃除をします。<br>来た時よりも綺麗にしましょう！<br>今後もイベントを行うためにもご協力お願いします。</p></div></li>
+          <li><span class="items__icon">👟</span><div><strong>靴を入れる袋</strong><p>下駄箱は利用できません。</p></div></li>
+          <li><span class="items__icon">🍙</span><div><strong>昼食・飲み物</strong><p>食事はフロアでのみ可能です。<br>通路などでの飲食は禁止です。</p></div></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== 保険・撮影 ===== -->
+    <section class="section section--gray" id="rules">
+      <div class="container">
+        <h2 class="heading"><span class="heading__en">NOTES</span>保険・撮影について</h2>
+        <ul class="list">
+          <li>保険は各自でご加入ください。</li>
+          <li>写真・動画の撮影とSNSへの掲載は可能です。ほかの参加者や施設利用者が写り込まないよう、周りへの配慮をお願いします。</li>
+        </ul>
+
+        <h3 class="subheading">会場利用のお願い</h3>
+        <p class="note-lead">今後も定期的に開催できるよう、施設をきれいに使うことにご協力ください。</p>
+        <ul class="list">
+          <li>次の団体の利用があるため、終了後は速やかにご退出ください（<strong>16:45完全撤収</strong>）。</li>
+          <li>施設に傷をつけてしまった場合や、傷を見つけた場合は運営までお知らせください。</li>
+          <li>下駄箱は利用できません。靴を持って施設にお入りください。</li>
+          <li>食事はフロアでのみ可能です。</li>
+          <li>2階ギャラリーは使用できません。</li>
+          <li>ほかの利用者もいるため、通路を塞ぐなどの迷惑になる行為はおやめください。</li>
+          <li>施設内および施設周辺は禁煙です。</li>
+          <li>近隣住民の方の迷惑にならないよう、駐車場や施設の外では静かにお過ごしください。</li>
+          <li>駐車場には限りがあるため、近隣の駐車場をご利用いただく場合があります。あらかじめご了承ください。</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== お問い合わせ ===== -->
+    <section class="section" id="contact">
+      <div class="container contact">
+        <h2 class="heading"><span class="heading__en">CONTACT</span>お問い合わせ</h2>
+        <p>ご質問はInstagramのDMからお気軽にどうぞ。</p>
+        <a id="ig-link" class="btn btn--outline" target="_blank" rel="noopener">InstagramでDMする</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p class="footer__brand" data-bind="brand"></p>
+    <p class="footer__tagline" data-bind="tagline"></p>
+  </footer>
+
+  <!-- スマホ用 固定ボタン -->
+  <a href="#entry" class="fixed-cta" id="fixed-cta">参加を申し込む</a>
+
+  <script>
+/* =========================================================
+   ★ 更新するのはこのファイルだけでOKです ★
+   - 文字は "（ダブルクォーテーション）の中を書き換えてください
+   - 項目を増やすときは { ... }, のかたまりをコピーして増やします
+   - 最後のカンマの付け忘れ・消し忘れに注意してください
+   ========================================================= */
+
+const EVENT = {
+  /* ---------- 基本情報 ---------- */
+  brand: "unicycle free",
+  tagline: "一輪車をもっと自由に",
+  title: "X-style event",
+  date: "2027-02-06",                 // 開催日（カウントダウン用）
+  dateLabel: "2027年2月6日（土）",
+  venue: "宮野木スポーツセンター",
+  venueMapUrl: "https://www.google.com/maps/search/?api=1&query=%E5%AE%AE%E9%87%8E%E6%9C%A8%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%84%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC",
+  target: "一輪車競技に取り組んでいるすべての方",
+  capacity: "30〜40名",
+  fee: "4,000円",
+  deadline: "2027-01-17",             // 申込締切日（この日の23:59まで受付）
+  deadlineLabel: "2027年1月17日（日）",
+
+  /* ---------- 申し込みの状態 ----------
+     "auto"   … ふだんはこれ。送信先が空なら「受付開始前」、入っていれば「受付中」、
+                締切日を過ぎたら自動で「受付終了」になる
+     "soon"   … 受付開始前（フォームは見えるが送信できない）
+     "open"   … 受付中
+     "full"   … 定員に達したので締切
+     "closed" … 受付終了                                     */
+  entryStatus: "auto",
+
+  /* ---------- 申込フォームの送信先 ----------
+     Apps Script の「ウェブアプリ」のURL（https://script.google.com/macros/s/…/exec）
+     設定のしかたは README.md を見てください                    */
+  formEndpoint: "",
+
+  /* ---------- お問い合わせ ---------- */
+  instagramUrl: "https://www.instagram.com/unicycle_events/",
+
+  /* ---------- 参考動画 ----------
+     動画ファイルは video フォルダに入れて、src にファイル名を書きます
+     poster … 再生前に表示する画像（なくてもOK。images フォルダに入れる）
+     list を空 [] にすると、動画のセクションごと非表示になります         */
+  videos: {
+    lead: "X-styleがどんな種目か、動画でイメージしてみてください。",
+    list: [
+      { src: "video/reference.mp4", poster: "", caption: "X-style 演技の例" },
+      // { src: "video/reference2.mp4", poster: "", caption: "〇〇の演技" },
+    ],
+  },
+
+  /* ---------- お知らせ（新しいものを上に追加） ---------- */
+  notices: [
+    { date: "2026.11.28", text: "参加者の募集を開始しました！" },
+    // { date: "2027.01.20", text: "出走順を公開しました。", link: "#categories" },
+  ],
+
+  /* ---------- タイムテーブル ----------
+     isDraft: true の間は「仮」マークが付きます。確定したら false に */
+  timetable: {
+    isDraft: true,
+    note: "参加人数や参加者の年齢によって変わります。申し込みが終了次第、正式なタイムスケジュールを出します。",
+    finalNote: "",   // 確定後に添えたい一言があれば（例："当日の進行により前後する場合があります。"）
+    items: [
+      { time: "9:00",  title: "選手 入場" },
+      { time: "9:15",  title: "ウォーミングアップ" },
+      { time: "9:40",  title: "開会の挨拶・ルール説明" },
+      { time: "10:00", title: "競技開始", note: "年齢別カテゴリー①" },
+      { time: "12:00", title: "お昼休憩" },
+      { time: "13:00", title: "競技再開", note: "年齢別カテゴリー②" },
+      { time: "14:30", title: "エキシビション", note: "大人の選手による演技（審査なし）" },
+      { time: "16:00", title: "全体写真・掃除" },
+      { time: "16:30", title: "撤収" },
+      { time: "16:45", title: "完全撤収" },
+    ],
+  },
+
+  /* ---------- カテゴリー・出走順 ----------
+     published: false の間は「申込締切後に公開します」と表示
+     ※ 公開ページなので、選手名はチーム名＋イニシャルなどにするのがおすすめ */
+  categories: {
+    published: false,
+    note: "申込締切後に、カテゴリーと出走順をこちらで公開します。",
+    list: [
+      {
+        name: "〇〜〇歳の部",
+        time: "10:00〜",
+        players: [
+          "1. チーム名　A.K",
+          "2. チーム名　S.T",
+        ],
+      },
+      // { name: "〇〜〇歳の部", time: "13:00〜", players: ["1. チーム名　M.Y"] },
+    ],
+  },
+};
+
+</script>
+  <script>
+/* 表示用のプログラムです。ふだんは編集不要です（更新は config.js で） */
+(function () {
+  const E = EVENT;
+  const $ = (id) => document.getElementById(id);
+  const el = (tag, cls, text) => {
+    const n = document.createElement(tag);
+    if (cls) n.className = cls;
+    if (text != null) n.textContent = text;
+    return n;
+  };
+
+  /* --- 基本情報の差し込み --- */
+  document.querySelectorAll("[data-bind]").forEach((n) => {
+    const v = E[n.dataset.bind];
+    if (v != null) n.textContent = v;
+  });
+  $("map-link").href = E.venueMapUrl;
+  $("ig-link").href = E.instagramUrl;
+
+  /* --- 申し込み状態 --- */
+  const now = new Date();
+  const deadlineEnd = new Date(E.deadline + "T23:59:59+09:00");
+  let status = E.entryStatus;
+  if (status === "auto") {
+    if (now > deadlineEnd) status = "closed";
+    else status = E.formEndpoint ? "open" : "soon";
+  }
+  window.ENTRY_STATUS = status;
+  const STATUS = {
+    soon:   { label: "まもなく受付開始", cls: "badge--soon" },
+    open:   { label: "参加者 募集中！", cls: "badge--open" },
+    full:   { label: "定員に達しました", cls: "badge--closed" },
+    closed: { label: "受付は終了しました", cls: "badge--closed" },
+  };
+  const s = STATUS[status] || STATUS.soon;
+  const badge = $("status-badge");
+  badge.textContent = s.label;
+  badge.classList.add(s.cls);
+
+  const DAY = 86400000;
+  const today = new Date(now.toLocaleDateString("en-CA", { timeZone: "Asia/Tokyo" }) + "T00:00:00+09:00");
+  const eventDay = new Date(E.date + "T00:00:00+09:00");
+  const dlDay = new Date(E.deadline + "T00:00:00+09:00");
+  const cd = $("countdown");
+  if (status === "open") {
+    const d = Math.round((dlDay - today) / DAY);
+    cd.textContent = d === 0 ? "本日締切！" : `締切まであと ${d} 日`;
+  } else {
+    const d = Math.round((eventDay - today) / DAY);
+    if (d > 0) cd.textContent = `開催まであと ${d} 日`;
+    else if (d === 0) cd.textContent = "本日開催！";
+  }
+
+  /* --- お知らせ --- */
+  const news = $("news-list");
+  if (!E.notices.length) {
+    news.appendChild(el("li", "news__empty", "お知らせはまだありません。"));
+  }
+  E.notices.forEach((n) => {
+    const li = el("li", "news__item");
+    li.appendChild(el("time", "news__date", n.date));
+    if (n.link) {
+      const a = el("a", "news__text link", n.text);
+      a.href = n.link;
+      li.appendChild(a);
+    } else {
+      li.appendChild(el("span", "news__text", n.text));
+    }
+    news.appendChild(li);
+  });
+
+  /* --- 参考動画 --- */
+  const mv = E.videos;
+  if (!mv || !mv.list.length) {
+    $("movie").hidden = true;
+  } else {
+    $("movie-lead").textContent = mv.lead || "";
+    const list = $("movie-list");
+    mv.list.forEach((m) => {
+      const fig = el("figure", "movie");
+      const frame = el("div", "movie__frame");
+      const v = document.createElement("video");
+      v.src = m.src;
+      if (m.poster) v.poster = m.poster;
+      v.controls = true;
+      v.playsInline = true;
+      v.preload = "metadata";
+      v.addEventListener("error", () => {
+        frame.replaceChildren(el("p", "movie__missing", "動画は準備中です"));
+      });
+      frame.appendChild(v);
+      fig.appendChild(frame);
+      if (m.caption) fig.appendChild(el("figcaption", "movie__caption", m.caption));
+      list.appendChild(fig);
+    });
+  }
+
+  /* --- タイムテーブル --- */
+  const tt = E.timetable;
+  $("tt-draft").hidden = !tt.isDraft;
+  $("tt-draftbox").hidden = !tt.isDraft;
+  $("timeline").classList.toggle("timeline--draft", tt.isDraft);
+  if (tt.isDraft) {
+    $("tt-draftnote").textContent = tt.note;
+    $("tt-note").textContent = "※ 上記はあくまでも予定です。";
+  } else {
+    $("tt-note").textContent = tt.finalNote ? "※ " + tt.finalNote : "";
+  }
+  const tl = $("timeline");
+  tt.items.forEach((it) => {
+    const li = el("li", "timeline__item");
+    li.appendChild(el("span", "timeline__time", it.time));
+    const body = el("div", "timeline__body");
+    body.appendChild(el("span", "timeline__title", it.title));
+    if (it.note) body.appendChild(el("span", "timeline__note", it.note));
+    li.appendChild(body);
+    tl.appendChild(li);
+  });
+
+  /* --- カテゴリー・出走順 --- */
+  const ca = $("category-area");
+  const cat = E.categories;
+  if (!cat.published) {
+    const box = el("div", "placeholder");
+    box.appendChild(el("p", "placeholder__icon", "⏳"));
+    box.appendChild(el("p", null, cat.note));
+    ca.appendChild(box);
+  } else {
+    const grid = el("div", "cat-grid");
+    cat.list.forEach((c) => {
+      const card = el("div", "cat");
+      const head = el("div", "cat__head");
+      head.appendChild(el("h3", "cat__name", c.name));
+      if (c.time) head.appendChild(el("span", "cat__time", c.time));
+      card.appendChild(head);
+      const ol = el("ul", "cat__list");
+      c.players.forEach((p) => ol.appendChild(el("li", null, p)));
+      card.appendChild(ol);
+      grid.appendChild(card);
+    });
+    ca.appendChild(grid);
+  }
+
+  /* --- 固定の申込ボタン（受付中だけ表示） --- */
+  const fixed = $("fixed-cta");
+  if (status !== "open") fixed.hidden = true;
+
+  /* ヒーローか申込エリアが見えているときは固定ボタンを隠す */
+  if ("IntersectionObserver" in window) {
+    const visible = new Set();
+    const io = new IntersectionObserver((ents) => {
+      ents.forEach((en) => (en.isIntersecting ? visible.add(en.target) : visible.delete(en.target)));
+      fixed.classList.toggle("is-hidden", visible.size > 0);
+    });
+    io.observe($("entry"));
+    io.observe(document.querySelector(".hero"));
+  }
+})();
+
+</script>
+  <script>
+/* 申込フォームの動き（ふだんは編集不要です。送信先は config.js の formEndpoint） */
+(function () {
+  const E = EVENT;
+  const $ = (id) => document.getElementById(id);
+  const form = $("entry-form");
+  if (!form) return;
+
+  const status = window.ENTRY_STATUS;
+  const MAX_PLAYERS = 20;
+  const AGES = [];
+  for (let a = 3; a <= 18; a++) AGES.push({ v: a, t: a + "歳" });
+  AGES.push({ v: 19, t: "19歳以上" });
+
+  /* --- 受付終了・定員のとき --- */
+  if (status === "closed" || status === "full") {
+    $("entry-form-wrap").hidden = true;
+    const msg = $("entry-closed");
+    msg.textContent = status === "full" ? "定員に達したため、受付を終了しました。" : "受付は終了しました。";
+    msg.hidden = false;
+    return;
+  }
+
+  /* --- 受付開始前：見えるが送信できない --- */
+  const submitBtn = $("submit-btn");
+  if (status !== "open") {
+    $("form-notice").hidden = false;
+    submitBtn.disabled = true;
+    submitBtn.textContent = "受付開始までお待ちください";
+  }
+
+  /* --- 選手の行 --- */
+  const list = $("players");
+  const tpl = $("player-tpl");
+  const addBtn = $("add-player");
+
+  function refresh() {
+    const rows = list.querySelectorAll(".player");
+    rows.forEach((li, i) => {
+      li.querySelector(".player__num").textContent = "選手 " + (i + 1);
+      li.querySelector(".player__del").hidden = rows.length === 1;
+    });
+    $("player-count").textContent = rows.length;
+    addBtn.hidden = rows.length >= MAX_PLAYERS;
+  }
+
+  function addPlayer(focus) {
+    const li = tpl.content.firstElementChild.cloneNode(true);
+    const sel = li.querySelector("select");
+    const first = document.createElement("option");
+    first.value = "";
+    first.textContent = "選ぶ";
+    sel.appendChild(first);
+    AGES.forEach((a) => {
+      const o = document.createElement("option");
+      o.value = a.v;
+      o.textContent = a.t;
+      sel.appendChild(o);
+    });
+    li.querySelector(".player__del").addEventListener("click", () => {
+      li.remove();
+      refresh();
+    });
+    list.appendChild(li);
+    refresh();
+    if (focus) li.querySelector("input").focus();
+  }
+
+  addBtn.addEventListener("click", () => addPlayer(true));
+  addPlayer(false);
+
+  /* --- 駐車場の台数 --- */
+  const carsField = $("cars-field");
+  form.querySelectorAll('input[name="parking"]').forEach((r) =>
+    r.addEventListener("change", () => {
+      carsField.hidden = form.parking.value !== "使う";
+      if (carsField.hidden) form.cars.value = "";
+    })
+  );
+
+  /* --- 入力チェック --- */
+  const KANA = /^[ぁ-んゔー\s　]+$/;
+  const IG = /^[A-Za-z0-9._]{1,30}$/;
+
+  function mark(elm, bad) {
+    elm.classList.toggle("is-invalid", bad);
+    return bad;
+  }
+
+  function collect() {
+    const errors = [];
+    const team = form.teamName.value.trim();
+    if (mark(form.teamName, !team)) errors.push("チーム名を入力してください。");
+
+    const ig = form.instagram.value.trim().replace(/^@/, "");
+    if (mark(form.instagram, !IG.test(ig))) errors.push("InstagramのアカウントIDを正しく入力してください（英数字・ . ・ _ ）。");
+
+    const players = [];
+    let playerBad = false;
+    list.querySelectorAll(".player").forEach((li) => {
+      const name = li.querySelector('[data-k="name"]');
+      const kana = li.querySelector('[data-k="kana"]');
+      const age = li.querySelector('[data-k="age"]');
+      const p = { name: name.value.trim(), kana: kana.value.trim(), age: Number(age.value) };
+      if (mark(name, !p.name)) playerBad = true;
+      if (mark(kana, !KANA.test(p.kana))) playerBad = true;
+      if (mark(age, !age.value)) playerBad = true;
+      players.push(p);
+    });
+    if (playerBad) errors.push("参加選手の名前・ふりがな（ひらがな）・年齢をすべて入力してください。");
+
+    const parking = form.parking.value;
+    const radios = form.querySelector(".choices");
+    if (mark(radios, !parking)) errors.push("駐車場を使うかどうかを選んでください。");
+    let cars = 0;
+    if (parking === "使う") {
+      cars = Number(form.cars.value);
+      if (mark(form.cars, !cars)) errors.push("駐車場を使う台数を選んでください。");
+    }
+
+    const agrees = [...form.querySelectorAll('input[name="agree"]')];
+    const agreeBad = agrees.some((c) => !c.checked);
+    agrees.forEach((c) => mark(c.closest(".check"), !c.checked));
+    if (agreeBad) errors.push("確認事項にすべてチェックしてください。");
+
+    return {
+      errors,
+      data: {
+        teamName: team,
+        instagram: ig,
+        players,
+        parking,
+        cars,
+        agreements: agrees.map((c) => c.value),
+        message: form.message.value.trim(),
+        website: form.website.value,
+      },
+    };
+  }
+
+  /* 入力し直したら赤枠を消す */
+  form.addEventListener("input", (e) => e.target.classList && e.target.classList.remove("is-invalid"));
+  form.addEventListener("change", (e) => {
+    const box = e.target.closest(".check, .choices");
+    if (box) box.classList.remove("is-invalid");
+  });
+
+  /* --- 送信 --- */
+  const errBox = $("form-error");
+  function showError(lines) {
+    errBox.replaceChildren();
+    lines.forEach((t) => {
+      const p = document.createElement("span");
+      p.textContent = t;
+      errBox.appendChild(p);
+    });
+    errBox.hidden = false;
+    errBox.scrollIntoView({ behavior: "smooth", block: "center" });
+  }
+
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    if (status !== "open" || !E.formEndpoint) return;
+    errBox.hidden = true;
+
+    const { errors, data } = collect();
+    if (errors.length) return showError(errors);
+
+    submitBtn.disabled = true;
+    submitBtn.textContent = "送信しています…";
+    try {
+      const res = await fetch(E.formEndpoint, { method: "POST", body: JSON.stringify(data) });
+      const out = await res.json();
+      if (!out.ok) throw new Error(out.error || "error");
+      showDone(out.id, data);
+    } catch (err) {
+      const closed = String(err.message) === "closed";
+      showError([
+        closed
+          ? "申込の受付期間が終了しています。"
+          : "送信できませんでした。通信環境を確認して、もう一度お試しください。",
+        "何度も失敗する場合は、InstagramのDMでご連絡ください。",
+      ]);
+      submitBtn.disabled = false;
+      submitBtn.textContent = "この内容で申し込む";
+    }
+  });
+
+  /* --- 完了画面 --- */
+  function showDone(id, d) {
+    form.hidden = true;
+    $("form-notice").hidden = true;
+    $("done-id").textContent = id;
+    const dl = $("done-summary");
+    const rows = [
+      ["チーム名", d.teamName],
+      ["Instagram", "@" + d.instagram],
+      ["参加人数", d.players.length + "名"],
+      ["参加選手", d.players.map((p) => `${p.name}（${p.kana}）${p.age >= 19 ? "19歳以上" : p.age + "歳"}`).join("\n")],
+      ["駐車場", d.parking === "使う" ? `使う（${d.cars}台）` : "使わない"],
+      ["参加費", (d.players.length * Number(String(E.fee).replace(/\D/g, ""))).toLocaleString() + "円"],
+    ];
+    if (d.message) rows.push(["質問・連絡事項", d.message]);
+    rows.forEach(([k, v]) => {
+      const dt = document.createElement("dt");
+      dt.textContent = k;
+      const dd = document.createElement("dd");
+      dd.textContent = v;
+      dl.append(dt, dd);
+    });
+    const done = $("form-done");
+    done.hidden = false;
+    done.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+})();
+
+</script>
+</body>
+</html>
